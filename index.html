@@ -1,285 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
   <head>
     <meta charset="utf-8">
-    <title>Library Name :: Novinet</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Library-example by scottmmack</title>
 
-    <!-- CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <style type="text/css">
-
-      /* Sticky footer styles
-      -------------------------------------------------- */
-
-      html,
-      body {
-        height: 100%;
-        /* The html and body elements cannot have any padding or margin. */
-      }
-
-      /* Wrapper for page content to push down footer */
-      #wrap {
-        min-height: 100%;
-        height: auto !important;
-        height: 100%;
-        /* Negative indent footer by it's height */
-        margin: 0 auto -60px;
-      }
-	  
-	  a.logo {
-		  background:url(images/novinet-logo.png) no-repeat 0 0;
-		  width:50px;
-		  height:50px;
-		  display:block;
-		  float:right;
-		  position:relative;
-		  top:-60px;
-		  background-size:50px 50px;
-		}
-	  section { margin-bottom:40px;}
-	  /*
-	  .btn, .btn-group { float:right; margin:0px 5px;}
-	  .btn-group { position:relative;}
-	  */
-.navbar .divider-vertical {
-    border-left: 1px solid #dddddd;
-    border-right: 1px solid #f1f1f1;
-    margin: 0 9px;
-}
-      /* Set the fixed height of the footer here */
-      #push,
-      #footer {
-        height: 60px;
-      }
-      #footer {
-        background-color: #f5f5f5;
-      }
-
-      /* Lastly, apply responsive CSS fixes as necessary */
-      @media (max-width: 767px) {
-        #footer {
-          margin-left: -20px;
-          margin-right: -20px;
-          padding-left: 20px;
-          padding-right: 20px;
-        }
-      }
-
-
-
-      /* Custom page CSS
-      -------------------------------------------------- */
-      /* Not required for template or sticky footer method. */
-
-      .container {
-        width: auto;
-        max-width: 680px;
-      }
-      .container .credit {
-        margin: 20px 0;
-      }
-
-    </style>
-    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
-      <script src="../assets/js/html5shiv.js"></script>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
   </head>
-
   <body>
+    <div class="wrapper">
+      <header>
+        <h1>Library-example</h1>
+        <p>Instructions and description for example library</p>
+
+        <p class="view"><a href="https://github.com/scottmmack/library-example">View the Project on GitHub <small>scottmmack/library-example</small></a></p>
 
 
-    <!-- Part 1: Wrap all page content here -->
-    <div id="wrap">
-
-      <!-- Begin page content -->
-      <div class="container">
-        <div class="page-header">
-          <h1>Library Name</h1>
-          <a href="#" class="logo"></a>
-          <h2></h2>
-          <!--
-          <div class="btn-group">
-                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">Other Projects
-                    <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="">Other Library link 1</a></li>
-                    <li><a href="">Other Library link 1</a></li>
-                    <li><a href="">Other Library link 1</a></li>
-                    <li><a href="">Other Library link 1</a></li>
-                    <li><a href="">Other Library link 1</a></li>
-                    <li><a href="">Other Library link 1</a></li>
-                </ul>
-        	</div> 
-          <button class="btn">View on GitHub</button>
-          <button class="btn">Download as .tar.gz</button>
-          <button class="btn">Download as .zip</button> 
-          	-->
-            
-            
-            
-            
-        </div>
-        <section>
-        
-        <!-- nav bar begin -->
-            <div class="navbar">
-                <div class="navbar-inner">
-                    <div class="container">
-                        <a class="btn btn-navbar collapsed" data-target=".navbar-responsive-collapse" data-toggle="collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        </a>
-                        <div class="nav-collapse navbar-responsive-collapse collapse" style="height: 0px;">
-                            <ul class="nav">
-                                <li><a href="#">Download as .zip</a></li>
-                                <li class="divider-vertical"><a href="#">Download as .tar.gz</a></li>
-                                <li class="divider-vertical"><a href="#">View on GitHub</a></li>
-                                <li class="dropdown">
-                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Other Projects
-                                    <b class="caret"></b>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Other Library link 1</a></li>
-                                        <li><a href="#">Other Library link 2</a></li>
-                                        <li><a href="#">Other Library link 3</a></li>
-                                        <li class="divider"></li>
-                                        <li class="nav-header">Seperate links</li>
-                                        <li><a href="#">Other Library link A</a></li>
-                                        <li><a href="#">Other Library link B</a></li>
-                                    </ul>
-                                </li>
-                            </ul><!-- end ul nav -->
-                        </div><!-- end nav-collapse -->
-                    </div><!-- end container -->
-                </div><!-- navbar-inner -->
-            </div><!-- navbar -->
-            <!-- nav ar end -->
-       
-     
-       </section>
-        <section>
-        
-        <!--#include virtual="text.txt"-->
-        
-        <p>WOW</p>
-        
-        <p class="lead">Welcome</p>
-        <p>Brief intro describing the library or code. What is it?</p>
-        </section>
-        <section>
-        <p class="lead">Features</p>
-        <p>Highlight key elements or areas the library does.</p>
-        <small>Coud use a table? Example table below.</small>
-        <table class="table table-bordered">
-            <thead>
-            <tr>
-            <th>#</th>
-            <th>Feature</th>
-            <th>Benefit</th>
-            <th>Compatibility</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-            <td rowspan="2">1</td>
-            <td>Feature 1a</td>
-            <td><div class="icon-ok"></div></td>
-            <td>True</td>
-            </tr>
-            <tr>
-            <td>Feature 1b</td>
-            <td><div class="icon-remove"></div></td>
-            <td>False</td>
-            </tr>
-            <tr>
-            <td>2</td>
-            <td>Feature 2</td>
-            <td><div class="icon-ok"></div></td>
-            <td>True</td>
-            </tr>
-            <tr>
-            <td>3</td>
-            <td colspan="2">Feature 3</td>
-            <td>N/A</td>
-            </tr>
-            </tbody>
-         </table>
-        </section>
-        <section>
-        <p class="lead">Usage</p>
-        <p>Examples or a sample of how to use it? (API info?) Flowcharts or diagrams?</p>
-        <code>This is where your code could be to display usage.</code>
-        </section>
-        <section>
-        <p class="lead">Dependencies</p>
-        <p>If any, a list of the required libraries to funtion correctly.</p>
-        <ul class="unstyled">
-        	<li>Useful link 1</li>
-            <li>Useful link 2</li>
-            <li>Useful link 3</li>
+        <ul>
+          <li><a href="https://github.com/scottmmack/library-example/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/scottmmack/library-example/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/scottmmack/library-example">View On <strong>GitHub</strong></a></li>
         </ul>
-        </section>
-        <section>
-        <p class="lead">Useful Links</p>
-        <p>These could be throughout the content or if there are quite a few for reference we could give its own section.</p>
-		<ul class="unstyled">
-        	<li><a href="#">Useful link 1</a></li>
-            <li><a href="#">Useful link 2</a></li>
-            <li><a href="#">Useful link 3</a></li>
-        </ul>
-        </section>
-        <section>
-        <p class="lead">Contributions</p>
-        <p>A guide on how to go about contributing to the code.</p>
-        </section>
-        <section>
-        <p class="lead">Licence &amp; Copyright Information</p>
-        <p>Info relating to the license and copyright. Perhaps a link off to the full License itself.</p>
-        </section>
-      </div>
+      </header>
+      <section>
+        <h3>
+<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-      <div id="push"></div>
+<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+
+<pre><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages
+</code></pre>
+
+<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+
+<h3>
+<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+
+<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+
+<h3>
+<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+
+<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+
+<h3>
+<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+
+<h3>
+<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/scottmmack">scottmmack</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
     </div>
-
-    <div id="footer">
-      <div class="container">
-        <p class="muted credit">Copright &copy; <a href="#">Novinet</a> 2013 and <a href="#">Licence Information</a>.</p>
-      </div>
-    </div>
-
-
-
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/bootstrap-transition.js"></script>
-    <script src="assets/js/bootstrap-alert.js"></script>
-    <script src="assets/js/bootstrap-modal.js"></script>
-    <script src="assets/js/bootstrap-dropdown.js"></script>
-    <script src="assets/js/bootstrap-scrollspy.js"></script>
-    <script src="assets/js/bootstrap-tab.js"></script>
-    <script src="assets/js/bootstrap-tooltip.js"></script>
-    <script src="assets/js/bootstrap-popover.js"></script>
-    <script src="assets/js/bootstrap-button.js"></script>
-    <script src="assets/js/bootstrap-collapse.js"></script>
-    <script src="assets/js/bootstrap-carousel.js"></script>
-    <script src="assets/js/bootstrap-typeahead.js"></script>
-
+    <script src="javascripts/scale.fix.js"></script>
+    
   </body>
 </html>
